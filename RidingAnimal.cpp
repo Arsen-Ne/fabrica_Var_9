@@ -27,9 +27,7 @@ RidingAnimal* RidingAnimal::create(RidingAnimalType type)
 }
 
 RidingAnimal::RidingAnimal()
-{
-	read_from_console();
-}
+{}
 
 void RidingAnimal::read_from_console()
 {

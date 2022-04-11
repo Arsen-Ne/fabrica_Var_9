@@ -14,7 +14,7 @@ private:
 	string m_name;
 protected:
 	int m_speed;
-	void read_from_console();
+	virtual void read_from_console();
 public:	
 	RidingAnimal();
 	void set_speed(int);

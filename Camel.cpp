@@ -1,7 +1,10 @@
 #include "Camel.h"
 #include <iostream>
 
-Camel::Camel() {}
+Camel::Camel() {
+	cout << "¬ведите данные верблюда" << endl;
+	read_from_console();
+}
 
 string Camel::get_info() const {
 	return "верблюд";

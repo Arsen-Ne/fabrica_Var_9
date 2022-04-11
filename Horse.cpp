@@ -5,6 +5,12 @@ using namespace std;
 
 Horse::Horse()
 {
+	read_from_console();
+}
+
+void Horse::read_from_console() {
+	cout << "¬ведите данные лошади" << endl;
+	RidingAnimal::read_from_console();
 	read_run_type_console();
 }
 
@@ -19,6 +25,10 @@ void Horse::read_run_type_console()
 void Horse::set_run_type(string type) 
 {
 	m_run_type = type;
+}
+
+string Horse::get_info() const {
+	return "лошадь";
 }
 
 string Horse::run_into() const {

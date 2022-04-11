@@ -1,7 +1,10 @@
 #include "Donkey.h"
 #include <iostream>
 
-Donkey::Donkey() {}
+Donkey::Donkey() {
+	cout << "¬ведите данные осла" << endl;
+	read_from_console();
+}
 
 string Donkey::get_info() const {
 	return "ослик";
